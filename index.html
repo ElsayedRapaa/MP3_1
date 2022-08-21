@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Normaliz File -->
+    <link rel="stylesheet" href="./CSS/normalize.css" />
+    <!-- Font Awesome File -->
+    <link rel="stylesheet" href="./CSS/all.min.css" />
+    <!-- Css File -->
+    <link rel="stylesheet" href="./CSS/style.css" />
+    <title>MP3 Player</title>
+</head>
+
+<body>
+
+    <!-- The Main -->
+    <div class="main">
+
+        <!-- the Navbar -->
+        <div class="navbar">
+            <button id="show-nav" onclick="sidbar()"><i class="fas fa-arrow-right"></i></button>
+            <div class="option">
+                <button id="music"><i class="fas fa-music"></i></button>
+                <button id="mute" onclick="muted()"><i class="fas fa-volume-up"></i></button>
+                <button id="edit"><i class="fas fa-pencil-alt"></i></button>
+            </div>
+            <button id="show-list" onclick="the_List()"><i class="fas fa-bars"></i></button>
+        </div>
+
+        <!-- Playing Part -->
+        <div class="playing-part">
+            <!-- Img Part -->
+            <div class="img-part">
+                <div class="img">
+                    <img />
+                </div>
+            </div>
+
+            <!-- Title Part -->
+            <div class="song-title">
+                <div class="title">song one</div>
+                <div class="art">artist name</div>
+            </div>
+
+            <!-- Control Part -->
+            <div class="control-button">
+                <div class="range-slider">
+                    <input type="range" min="0" max="100" value="0" id="slider" onchange="change_Time()" />
+                    <div></div>
+                </div>
+
+                <div class="main-btn">
+                    <button id="prev" onclick="prev()"><i class="fas fa-step-backward"></i></button>
+                    <button id="play" onclick="play()"><i class="fas fa-play"></i></button>
+                    <button id="next" onclick="next()"><i class="fas fa-step-forward"></i></button>
+                </div>
+            </div>
+
+            <!-- the List Song -->
+            <div class="list-song">
+                <div class="play-song active">
+                    <div class="info">
+                        <div class="list-title"></div>
+                        <div class="list-artist"></div>
+                    </div>
+                    <button class="play-list"><i class="fas fa-play"></i></button>
+                </div>
+                <div class="play-song">
+                    <div class="info">
+                        <div class="list-title"></div>
+                        <div class="list-artist"></div>
+                    </div>
+                    <button class="play-list"><i class="fas fa-play"></i></button>
+                </div>
+                <div class="play-song">
+                    <div class="info">
+                        <div class="list-title"></div>
+                        <div class="list-artist"></div>
+                    </div>
+                    <button class="play-list"><i class="fas fa-play"></i></button>
+                </div>
+                <div class="play-song">
+                    <div class="info">
+                        <div class="list-title"></div>
+                        <div class="list-artist"></div>
+                    </div>
+                    <button class="play-list"><i class="fas fa-play"></i></button>
+                </div>
+                <div class="play-song">
+                    <div class="info">
+                        <div class="list-title"></div>
+                        <div class="list-artist"></div>
+                    </div>
+                    <button class="play-list"><i class="fas fa-play"></i></button>
+                </div>
+                <div class="play-song">
+                    <div class="info">
+                        <div class="list-title"></div>
+                        <div class="list-artist"></div>
+                    </div>
+                    <button class="play-list"><i class="fas fa-play"></i></button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="./JS/file.js"></script>
+</body>
+
+</html>
